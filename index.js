@@ -44,20 +44,19 @@ const questions = [
 ]
 
 //Inquirer function to ask the question prompts
-// inquirer
-//   .prompt(questions)
-//   .then((answers) => {
-//     console.log(answers)
-//     createSVG(answers.shape, answers.textColour, answers.text, answers.bgColour)
-//   })
-//   .catch((error) => {
-//     if (error.isTtyError) {
-//       // Prompt couldn't be rendered in the current environment
-//     } else {
-//       // Something else went wrong
-//     }
-//   });
+inquirer
+  .prompt(questions)
+  .then((answers) => {
+    createSVG(answers.shape, answers.textColour, answers.text, answers.bgColour)
+  })
+  .catch((error) => {
+    if (error.isTtyError) {
+      // Prompt couldn't be rendered in the current environment
+    } else {
+      // Something else went wrong
+    }
+  });
 
 
 
-createSVG("Circle", "red", "HHH", "black")
+// createSVG("Circle", "red", "HHH", "black")
