@@ -1,6 +1,7 @@
 //Import dependencies
 const inquirer = require('inquirer');
 const createSVG = require("./lib/createSVG.js")
+const writeToFile = require("./lib/writeToFile.js")
 
 //Questions to ask
 const questions = [
@@ -42,7 +43,9 @@ const questions = [
 inquirer
   .prompt(questions)
   .then((answers) => {
-    createSVG(answers.shape, answers.textColour, answers.text, answers.bgColour)
+    return createSVG(answers.shape, answers.textColour, answers.text, answers.bgColour)
+  }).then((svg) => {
+    writeToFile(svg)
   })
   .catch((error) => {
     if (error.isTtyError) {
@@ -51,7 +54,3 @@ inquirer
       // Something else went wrong
     }
   });
-
-
-
-// createSVG("Circle", "red", "HHH", "black")
