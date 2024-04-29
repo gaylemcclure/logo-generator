@@ -6,7 +6,11 @@
 This logo generator will make graphic designers obsolete, as it gives you ability to create your own logo from a selection of options. All that is required is to input a 3 character word, choice of colour for text and background, and the shape (circle, triange or square), and this generator will create an SVG logo file for you. 
 
 
-https://github.com/gaylemcclure/readme-generator/assets/10378132/139acd72-6329-4319-b07a-9fa1afc33b64
+
+
+https://github.com/gaylemcclure/logo-generator/assets/10378132/3637a9e0-0c60-49d4-b7ba-55b5a426cd13
+
+
 
 
 ![screenshot](/Assets/svg-q.png)
