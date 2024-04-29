@@ -3,13 +3,15 @@
   [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
   
   ## DESCRIPTION
-This README generator takes user inputs from the command line, and uses them to create an organised and professional README file, complete with license shield. Answer the command prompts to enter the details of your project and the generator will do the hard work for you. 
+This logo generator will make graphic designers obsolete, as it gives you ability to create your own logo from a selection of options. All that is required is to input a 3 character word, choice of colour for text and background, and the shape (circle, triange or square), and this generator will create an SVG logo file for you. 
 
 
 https://github.com/gaylemcclure/readme-generator/assets/10378132/139acd72-6329-4319-b07a-9fa1afc33b64
 
 
-![screenshot](/media/command.png)
+![screenshot](/Assets/svg-q.png)
+![screenshot](/Assets/svg-code.png)
+![screenshot](/Assets/svg-logo.png)
 
   ## TABLE OF CONTENTS
   
@@ -25,14 +27,14 @@ https://github.com/gaylemcclure/readme-generator/assets/10378132/139acd72-6329-4
   
   ## INSTALLATION
 To clone from Github, use GitBash   
-```git clone git@github.com:gaylemcclure/readme-generator.git```
+```git@github.com:gaylemcclure/logo-generator.gitt```
   
   ## USAGE
   Upon installation of the project, start the generator using the terminal with the command   
   ```node index.js```
-  This will then bring up the first prompt question asking for the title of the project.   
-  Complete all of the questions in the command line to create the README file. Upon completion, you will receive a message asking you to check the README-Eg file, which will be updated with your new document. 
-  To see the preview, use the shortcut CTRL + Shift + V. 
+  This will then bring up the first prompt question asking for the logo text  
+  Complete all of the questions in the command line to create the logo.svg file. Upon completion, you will receive a console log telling you that a file has been generated. 
+  To see the SVG in a browser, use the shortcut ALT + B.  
   
   ## LICENCE
   Distributed under the MIT license. For more information, see <a href=https://opensource.org/licenses/MIT>here</a>
@@ -43,14 +45,12 @@ To clone from Github, use GitBash
   
   ## TESTS
   1. Clone the project
-  2. Open a new terminal
+  2. run npm init
   3. Type 'node index.js' into the terminal and hit enter
   4. Check for command prompts appearing
-  5. Once all prompts have been answered, open the README-Eg file
-  6. Open the markdown preview
-  7. Click on the shield to check the license page opens
-  8. Click on the link in the License section
-  9. Check the table of contents goes to the correct section
+  5. Once all prompts have been answered, open the logo.svg file
+  6. Open in browser
+  7. run npm run test to check the jest test files
   
   ## QUESTIONS
   Github Username: <a href='https://github.com/gaylemcclure'>Gayle McClure</a>  
