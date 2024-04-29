@@ -1,5 +1,7 @@
 //Import dependencies
 const inquirer = require('inquirer');
+const createSVG = require("./lib/createSVG.js")
+
 
 //Logo created - logo.svg
 //pring "Generated logo.svg" to the command line
@@ -21,7 +23,7 @@ const questions = [
     },
     {
         type: 'input', 
-        name: 'colour',
+        name: 'textColour',
         message: 'Enter the colour name or hexidecimal number (including a #) for the text: '
     },
     {
@@ -34,19 +36,28 @@ const questions = [
           "Square"
         ],
       },
+      {
+        type: 'input', 
+        name: 'bgColour',
+        message: 'Enter the colour name or hexidecimal number (including a #) for the shape background: '
+    },
 ]
 
 //Inquirer function to ask the question prompts
-inquirer
-  .prompt(questions)
-  .then((answers) => {
-    console.log(answers)
-  })
-  .catch((error) => {
-    if (error.isTtyError) {
-      // Prompt couldn't be rendered in the current environment
-    } else {
-      // Something else went wrong
-    }
-  });
+// inquirer
+//   .prompt(questions)
+//   .then((answers) => {
+//     console.log(answers)
+//     createSVG(answers.shape, answers.textColour, answers.text, answers.bgColour)
+//   })
+//   .catch((error) => {
+//     if (error.isTtyError) {
+//       // Prompt couldn't be rendered in the current environment
+//     } else {
+//       // Something else went wrong
+//     }
+//   });
 
+
+
+createSVG("Circle", "red", "HHH", "black")
