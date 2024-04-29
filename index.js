@@ -2,11 +2,6 @@
 const inquirer = require('inquirer');
 const createSVG = require("./lib/createSVG.js")
 
-
-//Logo created - logo.svg
-//pring "Generated logo.svg" to the command line
-//Open logo.svg in browser
-
 //Questions to ask
 const questions = [
     {
